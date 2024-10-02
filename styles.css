@@ -1,0 +1,39 @@
+.nav-link:hover{
+    color: lightcoral!important;
+}
+
+.navbar-nav{
+    overflow: hidden;
+}
+/* Aimation menu css */
+li {
+    opacity: 0;
+    animation: animations 1.5s ease-in-out forwards;
+    overflow: hidden;
+}
+
+li:nth-child(1) {
+    animation-delay: .2s;
+}
+li:nth-child(2) {
+    animation-delay: .4s; 
+}
+li:nth-child(3) {
+    animation-delay: .6s;
+}
+
+/* Animation keyframes pour "fade-in" */
+@keyframes animations {
+    from {
+        opacity: 0;
+        overflow: hidden;
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+a{
+    transition: 1s;
+}
